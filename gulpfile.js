@@ -6,7 +6,6 @@ var minifyCSS = require('gulp-csso');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
-
 var browserSync = require('browser-sync').create();
 
 // Process Pug files
@@ -53,18 +52,14 @@ gulp.task('imageMin', function(){
 });
 
 gulp.task('default', ['html', 'css', 'js', 'imageMin' ], function() {
-  // Serve files from the root of this project
+  // Serve files from the dist folder of this project
     browserSync.init({
         server: {
             baseDir: "./dist/"
         }
     });
-
-
     gulp.watch('src/assets/css/**/*', ['css']);
     gulp.watch('src/*.pug', ['html']);
     gulp.watch('src/assets/img/*', ['imageMin']);
-    // add browserSync.reload to the tasks array to make
-    // all browsers reload after tasks are complete.
     gulp.watch("src/assets/js/*.js", ['js-watch']);
 });
