@@ -1,0 +1,1 @@
+$(function(){console.log("jQuery rdy")}),console.log("slider");

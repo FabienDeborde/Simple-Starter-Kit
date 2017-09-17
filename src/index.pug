@@ -6,7 +6,7 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     
-    include ./includes/head/_seo-includes.jade
+    include ./includes/head/_seo-includes.pug
       
     link(rel="icon", href="favicon.ico")
 
@@ -30,7 +30,7 @@ html(lang="ja")
     include ./includes/_footer.pug
     //フッター　終
 
-   
-    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    //jQuery
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     //メインカスタム JS（minifiedバージョン）
     script(src="./assets/js/main.js")
