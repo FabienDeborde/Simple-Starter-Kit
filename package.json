@@ -1,0 +1,13 @@
+{
+  "name": "Simple-Starter-Kit",
+  "version": "1.0.0",
+  "description": "Starter Kit for web page, using pug, sass and js, and processing the files with gulp.",
+  "main": "index.js",
+  "repository": "git@github.com:FabienDeborde/Simple-Starter-Kit.git",
+  "author": "Fabien <fabien.webdev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
